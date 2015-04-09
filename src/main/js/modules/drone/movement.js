@@ -28,7 +28,7 @@ west.
 
 ### Drone Positional Info
 
- * getLocation() - Returns a native Java Location object for the drone
+ * getLocation() - Returns a native Java Location object for the drone. In CanaryMod, the type is *Packages.net.canarymod.api.world.position.Location* and in Bukkit it is *org.bukkit.Location*
 
 ### Drone Markers
 
@@ -41,7 +41,7 @@ current location.
 
 A 'start' checkpoint is automatically created when the Drone is first created.
 
-Markers are created and returned to using the followng two methods...
+Markers are created and returned to using the following two methods ...
 
  * chkpt - Saves the drone's current location so it can be returned to later.
  * move - moves the drone to a saved location. Alternatively you can provide a Java Location object or x,y,z and direction parameters.
